@@ -1,5 +1,9 @@
 # FrameMouse 🖱️
 
+<p align="center">
+	<img src="FrameMouse.png" alt="FrameMouse" width="120">
+</p>
+
 **Turn your Steam Frame's right controller into a desk mouse.**
 
 Put the controller flat on your desk and slide it around. The cursor moves. Pick it up to reposition it, just like a real mouse.
