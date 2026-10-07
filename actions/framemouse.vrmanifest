@@ -1,0 +1,15 @@
+{
+  "source": "builtin",
+  "applications": [
+    {
+      "app_key": "framemouse.overlay",
+      "launch_type": "binary",
+      "binary_path_linux_arm": "../build/framemouse",
+      "is_dashboard_overlay": true,
+      "action_manifest_path": "actions.json",
+      "strings": {
+        "en_us": { "name": "FrameMouse", "description": "Use the right controller as a desk mouse" }
+      }
+    }
+  ]
+}

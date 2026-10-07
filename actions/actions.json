@@ -1,0 +1,26 @@
+{
+  "default_bindings": [
+    { "controller_type": "frame_controller", "binding_url": "bindings_frame_controller.json" }
+  ],
+  "action_sets": [
+    { "name": "/actions/mouse", "usage": "single" }
+  ],
+  "actions": [
+    { "name": "/actions/mouse/in/left_click",  "type": "boolean" },
+    { "name": "/actions/mouse/in/right_click", "type": "boolean" },
+    { "name": "/actions/mouse/in/calibrate",   "type": "boolean" },
+    { "name": "/actions/mouse/in/pose_raw",    "type": "pose" },
+    { "name": "/actions/mouse/in/pose_tip",    "type": "pose" }
+  ],
+  "localization": [
+    {
+      "language_tag": "en_US",
+      "/actions/mouse": "FrameMouse",
+      "/actions/mouse/in/left_click": "Left click",
+      "/actions/mouse/in/right_click": "Right click",
+      "/actions/mouse/in/calibrate": "Set surface",
+      "/actions/mouse/in/pose_raw": "Mouse pose (raw)",
+      "/actions/mouse/in/pose_tip": "Mouse pose (tip)"
+    }
+  ]
+}

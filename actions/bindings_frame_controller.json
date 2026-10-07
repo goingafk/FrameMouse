@@ -1,0 +1,52 @@
+{
+  "name": "FrameMouse default",
+  "controller_type": "frame_controller",
+  "description": "Right controller as a desk mouse: bumper = left, trigger = right, A = set surface",
+  "bindings": {
+    "/actions/mouse": {
+      "sources": [
+        {
+          "path": "/user/hand/right/input/bumper",
+          "mode": "button",
+          "inputs": {
+            "click": {
+              "output": "/actions/mouse/in/left_click"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/trigger",
+          "mode": "button",
+          "inputs": {
+            "click": {
+              "output": "/actions/mouse/in/right_click"
+            }
+          },
+          "parameters": {
+            "click_activate_threshold": "0.5",
+            "click_deactivate_threshold": "0.45"
+          }
+        },
+        {
+          "path": "/user/hand/right/input/a",
+          "mode": "button",
+          "inputs": {
+            "click": {
+              "output": "/actions/mouse/in/calibrate"
+            }
+          }
+        }
+      ],
+      "poses": [
+        {
+          "output": "/actions/mouse/in/pose_raw",
+          "path": "/user/hand/right/pose/raw"
+        },
+        {
+          "output": "/actions/mouse/in/pose_tip",
+          "path": "/user/hand/right/pose/tip"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# Copy to ~/.config/framemouse/framemouse.conf. Every key is also a --flag.
+sensitivity = 4000     # mouse counts per metre of travel
+land_mm     = 8        # height above the surface that counts as touching
+lift_mm     = 15       # height above the surface that counts as lifted
+deadzone_mm = 0.15     # ignore per-frame motion smaller than this (tracking jitter)
+smoothing   = 0.5      # 0 = raw, up to 0.95 = very smooth
+invert_x    = false
+invert_y    = false
+pose        = raw      # raw | tip
+exclusive   = true     # hide bumper/trigger/A from the laser pointer and games
+rate        = 250      # updates per second
